@@ -1,0 +1,15 @@
+<template>
+
+  <!-- Card with Tile -->
+  <lightning-card  title={car.Name} >
+    
+    <!-- Body -->
+    <div class="slds-align_absolute-center">
+        <img class="style-car-tile-img" src={car.Image_URL__c} alt="">
+    </div>
+
+    <!-- Footer -->
+    <p slot="footer"><a onclick={tileClick}>Click para más datalles</a></p>
+  </lightning-card>
+    
+</template>

@@ -1,0 +1,32 @@
+<template>
+ 
+  <template lwc:if={carListTo.data}>
+      <lightning-card  title={carListTo.data.Name}>
+
+          <div class="slds-m-around_small">
+            <img class="car" src={carListTo.data.Image_URL__c} alt="">
+          </div>
+          
+          <div class="slds-m-around_small">
+            <p>Color: {carListTo.data.Color__c}</p>
+            <p><lightning-formatted-number value={carListTo.data.Price__c} format-style="currency" currency-code="USD">Precio: </lightning-formatted-number></p>
+          </div>
+
+          <div class="slds-m-around_small slds-align_absolute-center" style="height:5rem">
+            <button class="slds-button slds-button_brand">Cotizar</button>
+          </div>
+          
+      </lightning-card>
+  </template>
+
+  <template lwc:else >
+    <div class="slds-m-around_small" style="text-align: center;">
+
+      <p>Seleccione algún auto 😎</p>
+
+    </div>
+  </template>
+  
+  
+    
+</template>

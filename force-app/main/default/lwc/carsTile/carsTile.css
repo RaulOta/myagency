@@ -1,0 +1,13 @@
+.style-car-tile-img {
+  width: 250px;
+  height: 170px;
+}
+
+@media (max-width: 1023px) {
+
+  .style-car-tile-img {
+    width: 320;
+    height: 220px;
+  }
+
+}

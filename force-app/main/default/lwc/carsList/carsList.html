@@ -1,0 +1,27 @@
+<template>
+
+  <template if:true={carList.data}>
+    <div class="slds-grid slds-wrap">
+
+      <template for:each={carList.data} for:item="car">
+
+        <!-- <div key={car.Id}>
+          <c-cars-tile car={car} ontileclick={handleTileClick}></c-cars-tile>
+        </div> -->
+        <div  key={car.Id} class="slds-col slds-size_1-of-1 slds-large-size_4-of-12 slds-m-bottom_x-small">
+          <c-cars-tile car={car} ontileclick={handleTileClick}></c-cars-tile>
+        </div>
+    
+      </template>
+      <!-- <div class="slds-col">
+        <span>2</span>
+      </div>
+      <div class="slds-col">
+        <span>3</span>
+      </div> -->
+    </div>
+    
+    
+  </template>
+    
+</template>

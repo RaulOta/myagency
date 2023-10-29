@@ -1,0 +1,28 @@
+<!-- <template>
+
+  <div class="c-container">
+        <lightning-layout pull-to-boundary="medium">
+            <lightning-layout-item flexibility="auto" padding="horizontal-medium">
+                <div class="custom-box">
+                  <c-cars-list oncarselected={handleCarSelect} ></c-cars-list>
+                </div>
+            </lightning-layout-item>
+            <lightning-layout-item flexibility="auto" padding="horizontal-medium">
+                <div class="custom-box">
+                  <c-cars-detail car-id={carSelectedToDetail} ></c-cars-detail>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+    </div>
+    
+</template> -->
+<template>
+  <div class="slds-grid slds-gutters">
+  <div class="slds-col slds-size_2-of-3">
+    <c-cars-list oncarselected={handleCarSelect} ></c-cars-list>
+  </div>
+  <div class="slds-col slds-size_1-of-3">
+    <c-cars-detail car-id={carSelectedToDetail} ></c-cars-detail>
+  </div>
+</div>
+</template>
