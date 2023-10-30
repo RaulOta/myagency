@@ -1,0 +1,14 @@
+<template>
+  <template if:true={agents.data}>
+    <div class="slds-grid slds-wrap">
+
+      <template for:each={agents.data} for:item="agent">
+
+        <div key={agent.Id} class="agent-container slds-col slds-size_1-of-1 slds-large-size_4-of-12 slds-m-bottom_x-small">
+          <c-agents-tile agent={agent}></c-agents-tile>
+        </div>
+
+      </template>
+    </div>
+  </template>
+</template>

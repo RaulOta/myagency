@@ -1,0 +1,18 @@
+<template>
+    <lightning-card  title={agent.Name}>
+            
+        <!-- Body -->
+        <div class="slds-align_absolute-center">
+            <img class="agent" src={agent.Image_URL__c} alt="">
+        </div>
+
+        <div class="slds-align_absolute-center">
+            <p><lightning-formatted-email value={agent.email__c} ></lightning-formatted-email></p>
+        </div>
+
+        <!-- Footer -->
+        <div class="slds-m-around_small slds-align_absolute-center" style="height:5rem">
+            <button class="slds-button slds-button_brand">Ver sus ventas</button>
+        </div>
+    </lightning-card>
+</template>
